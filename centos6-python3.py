@@ -1,7 +1,7 @@
-from fabric.api import sudo, cd, put
 #
 # install python3 to CentOS6
 #
+from fabric.api import sudo, cd, put
 
 download_dir = '/usr/local/src'
 
