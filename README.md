@@ -18,3 +18,13 @@ It's a install script for Python3 and PIP on CentOS6.
 ```
 $ fab -H 192.168.1.0 -f centos6-python3.py all
 ```
+
+
+
+### Apache Thrift
+
+It's a install script for Apache Thrift(http://thrift.apache.org/) on CentOS6. 
+```
+$ fab -H 192.168.1.0 -f centos6-thrift.py all
+```
+
