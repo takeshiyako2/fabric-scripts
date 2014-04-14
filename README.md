@@ -28,7 +28,7 @@ It's a install script for Apache Thrift(http://thrift.apache.org/) on CentOS6.
 $ fab -H 192.168.1.0 -f centos6-thrift.py all
 ```
 
-### Install jstat2gf
+### jstat2gf
 
 It's a install script for jstat2gf(https://github.com/kazeburo/jstat2gf) on CentOS6.  
 
