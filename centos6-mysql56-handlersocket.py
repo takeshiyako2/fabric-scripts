@@ -51,15 +51,6 @@ def mysql_restart():
     sudo('tail -500 /var/lib/mysql/mysqld-error.log')
     sudo('pgrep -f -l mysql')
 
-
-@task
-def set_mysqldump():
-    sudo('cd /usr/local/mysql/bin/mysqldump /usr/bin/mysqldump')
-
-@task
-def set_mysqlbinlog():
-    sudo('cp /usr/local/mysql/bin/mysqlbinlog /usr/bin/mysqlbinlog')
-
 @task 
 def handlersocket_get_source():
     with cd(cache_dir):
@@ -92,8 +83,6 @@ mysql_untar()
 mysql_install()
 mysql_setup()
 chmod_mysql_dir()
-#set_mysqldump()
-#set_mysqlbinlog()
 handlersocket_get_source()
 handlersocket_install()
 mysql_restart()
