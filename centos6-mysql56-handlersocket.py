@@ -42,6 +42,10 @@ def mysql_setup():
         sudo('ln -s /usr/local/mysql/bin/mysql /usr/bin/mysql')
 
 @task
+def mysql_put_conf():
+    put('templates/centos6-mysql56-handlersocket/my.cnf', '/etc/my.cnf', use_sudo=True)
+
+@task
 def chmod_mysql_dir():
     sudo('chmod 755 /var/lib/mysql')
 
@@ -60,7 +64,7 @@ def handlersocket_get_source():
 def handlersocket_install():
     with cd('%s/HandlerSocket-Plugin-for-MySQL' % cache_dir):
         sudo('./autogen.sh')
-        sudo('./configure --with-mysql-source=/usr/local/src/mysql-5.6.15 --with-mysql-bindir=/usr/local/mysql/bin --with-mysql-plugindir=/usr/local/mysql/lib/plugin')
+        sudo('./configure --with-mysql-source=/usr/local/src/%s --with-mysql-bindir=/usr/local/mysql/bin --with-mysql-plugindir=/usr/local/mysql/lib/plugin' % version)
         sudo('make')
         sudo('make install')
 
@@ -75,13 +79,14 @@ def info():
 @task
 def all():
     '''
-# mysql_handlersocket.all
+# centos6-mysql56-handlersocket.all
 install_yum()
 mysql_user()
 mysql_get_source()
 mysql_untar()
 mysql_install()
 mysql_setup()
+mysql_put_conf()
 chmod_mysql_dir()
 handlersocket_get_source()
 handlersocket_install()
@@ -90,9 +95,4 @@ show_plugins()
 info()
     '''
     exec(all.__doc__.strip())
-
-
-@task
-def mysql_put_production_conf():
-    put('templates/mysql_handlersocket/production.cnf', '/etc/my.cnf', use_sudo=True)
 
