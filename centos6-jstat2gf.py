@@ -7,7 +7,7 @@ cache_dir = '/usr/local/src'
 
 @task
 def install():
-    sudo('yum -y install git libyaml-devel *YAML*')
+    sudo('yum -y install perl-devel perl-ExtUtils-Manifest git libyaml-devel *YAML*')
     sudo('curl -L http://cpanmin.us | perl - --sudo App::cpanminus')
     sudo('/usr/local/bin/cpanm --version')
     sudo('ln -s /usr/local/bin/cpanm /usr/bin/cpanm')
