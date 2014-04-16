@@ -23,14 +23,14 @@ $ fab -H 192.168.1.0 -f centos6-python3.py all
 
 ### Apache Thrift
 
-It's a install script for Apache Thrift(http://thrift.apache.org/) on CentOS6. 
+It's a install script for Apache Thrift(http://thrift.apache.org/) for CentOS6. 
 ```
 $ fab -H 192.168.1.0 -f centos6-thrift.py all
 ```
 
 ### jstat2gf
 
-It's a install script for jstat2gf(https://github.com/kazeburo/jstat2gf) on CentOS6.  
+It's a install script for jstat2gf(https://github.com/kazeburo/jstat2gf) for CentOS6.  
 
 
 ```
@@ -38,3 +38,10 @@ $ fab -H 192.168.1.0 -f centos6-jstat2gf.py all
 ```
 
 
+### MySQL5.6 and HandlerSocket
+
+It's a install script for MySQL5.6 and HandlerSocket(https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL) for CentOS6.  
+
+```
+$ fab -H 192.168.1.0 -f centos6-mysql56-handlersocket.py all
+```
