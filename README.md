@@ -1,9 +1,11 @@
 # What's this?
 
-As first, you have to setup Fabric(http://fabfile.org/) on your PC.  
-And then, use this scripts.  
+There are Fabric script collection for some middleware. 
 
 ## Usage
+
+As first, you have to setup Fabric(http://fabfile.org/) on your PC.
+And then, use these scripts.
 
 Clone this repository.
 ```
