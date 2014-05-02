@@ -47,3 +47,14 @@ It's a install script for MySQL5.6 and HandlerSocket(https://github.com/DeNA/Han
 ```
 $ fab -H 192.168.1.0 -f centos6-mysql56-handlersocket.py all
 ```
+
+
+### Nginx with HttpLuaModule
+
+It's a install script for Nginx whtih HttpLuaModule(http://wiki.nginx.org/HttpLuaModule) for CentOS6.
+
+```
+$ fab -H 192.168.1.0 -f nginx_lua.py all
+```
+
+
