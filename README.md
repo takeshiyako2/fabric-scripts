@@ -54,7 +54,7 @@ $ fab -H 192.168.1.0 -f centos6-mysql56-handlersocket.py all
 It's a install script for Nginx whtih HttpLuaModule(http://wiki.nginx.org/HttpLuaModule).
 
 ```
-$ fab -H 192.168.1.0 -f nginx_lua.py all
+$ fab -H 192.168.1.0 -f centos6-nginx_lua.py all
 ```
 
 
