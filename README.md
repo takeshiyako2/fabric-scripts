@@ -1,6 +1,6 @@
 # What's this?
 
-There are Fabric script collection for some middleware. 
+There are Fabric script collection for some middleware for CentOS6. 
 
 ## Usage
 
@@ -25,14 +25,14 @@ $ fab -H 192.168.1.0 -f centos6-python3.py all
 
 ### Apache Thrift
 
-It's a install script for Apache Thrift(http://thrift.apache.org/) for CentOS6. 
+It's a install script for Apache Thrift(http://thrift.apache.org/). 
 ```
 $ fab -H 192.168.1.0 -f centos6-thrift.py all
 ```
 
 ### jstat2gf
 
-It's a install script for jstat2gf(https://github.com/kazeburo/jstat2gf) for CentOS6.  
+It's a install script for jstat2gf(https://github.com/kazeburo/jstat2gf).  
 
 
 ```
@@ -42,7 +42,7 @@ $ fab -H 192.168.1.0 -f centos6-jstat2gf.py all
 
 ### MySQL5.6 and HandlerSocket
 
-It's a install script for MySQL5.6 and HandlerSocket(https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL) for CentOS6.  
+It's a install script for MySQL5.6 and HandlerSocket(https://github.com/DeNA/HandlerSocket-Plugin-for-MySQL).  
 
 ```
 $ fab -H 192.168.1.0 -f centos6-mysql56-handlersocket.py all
@@ -51,7 +51,7 @@ $ fab -H 192.168.1.0 -f centos6-mysql56-handlersocket.py all
 
 ### Nginx with HttpLuaModule
 
-It's a install script for Nginx whtih HttpLuaModule(http://wiki.nginx.org/HttpLuaModule) for CentOS6.
+It's a install script for Nginx whtih HttpLuaModule(http://wiki.nginx.org/HttpLuaModule).
 
 ```
 $ fab -H 192.168.1.0 -f nginx_lua.py all
