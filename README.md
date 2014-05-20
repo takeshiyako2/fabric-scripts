@@ -57,4 +57,11 @@ It's a install script for Nginx whtih HttpLuaModule(http://wiki.nginx.org/HttpLu
 $ fab -H 192.168.1.0 -f centos6-nginx_lua.py all
 ```
 
+###
+
+It's a install script IPAexフォント・IPAフォント(http://d.hatena.ne.jp/addition/20130410/1365530641)
+
+```
+$ fab -H 192.168.1.0 -f centos6-ipafont.py all
+```
 
