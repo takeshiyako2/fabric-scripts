@@ -65,3 +65,4 @@ It's a install script IPAexフォント・IPAフォント(http://d.hatena.ne.jp/
 $ fab -H 192.168.1.0 -f centos6-ipafont.py all
 ```
 
+test
